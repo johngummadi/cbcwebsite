@@ -32,36 +32,107 @@ function HiideAllTabs()
 		contactUsDiv.style.display="none";
 }
 
+function RestoreButtonColorsToDefaults()
+{
+	var homeBtnDiv = document.getElementById("HomeBtnDiv");
+	if (homeBtnDiv)
+	{
+		//homeBtnDiv.setAttribute("class", "headerbutton");
+		homeBtnDiv.style.backgroundColor="transparent";
+		homeBtnDiv.style.color = "#ffffff";
+	}
+	
+	var aboutUsBtnDiv = document.getElementById("AboutUsBtnDiv");
+	if (aboutUsBtnDiv)
+	{
+		//aboutUsBtnDiv.setAttribute("class", "headerbutton");
+		aboutUsBtnDiv.style.backgroundColor="transparent";
+		aboutUsBtnDiv.style.color = "#ffffff";
+	}
+	
+	var ourFaithBtnDiv = document.getElementById("OurFaithBtnDiv");
+	if (ourFaithBtnDiv)
+	{
+		//ourFaithBtnDiv.setAttribute("class", "headerbutton");
+		ourFaithBtnDiv.style.backgroundColor="transparent";
+		ourFaithBtnDiv.style.color = "#ffffff";
+	}
+	
+	var contactUsBtnDiv = document.getElementById("ContactUsBtnDiv");
+	if (contactUsBtnDiv)
+	{
+		//contactUsBtnDiv.setAttribute("class", "headerbutton");
+		contactUsBtnDiv.style.backgroundColor="transparent";
+		contactUsBtnDiv.style.color = "#ffffff";
+	}
+} //RestoreButtonColorsToDefaults()
+
 function ShowHome()
 {
+	RestoreButtonColorsToDefaults();
 	HiideAllTabs();
 	var homeDiv = document.getElementById("HomeDiv");
 	if (homeDiv)
 		homeDiv.style.display="block";
+	
+	var homeBtnDiv = document.getElementById("HomeBtnDiv");
+	if (homeBtnDiv)
+	{
+		//homeBtnDiv.setAttribute("class", "headerbutton");
+		homeBtnDiv.style.backgroundColor="#ffffff";
+		homeBtnDiv.style.color = "rgb(81,128,0)";
+	}
 } //ShowHome()
 
 function ShowAboutUs()
 {
+	RestoreButtonColorsToDefaults();
 	HiideAllTabs();
 	var aboutUsDiv = document.getElementById("AboutUsDiv");
 	if (aboutUsDiv)
 		aboutUsDiv.style.display="block";
+	
+	var aboutUsBtnDiv = document.getElementById("AboutUsBtnDiv");
+	if (aboutUsBtnDiv)
+	{
+		//aboutUsBtnDiv.setAttribute("class", "headerbutton");
+		aboutUsBtnDiv.style.backgroundColor="#ffffff";
+		aboutUsBtnDiv.style.color = "rgb(81,128,0)";
+	}
 } //ShowAboutUs()
 
 function ShowStatementOfFaith()
 {
+	RestoreButtonColorsToDefaults();
 	HiideAllTabs();
 	var statementOfFaithDiv = document.getElementById("StatementOfFaithDiv");
 	if (statementOfFaithDiv)
 		statementOfFaithDiv.style.display="block";
+	
+	var ourFaithBtnDiv = document.getElementById("OurFaithBtnDiv");
+	if (ourFaithBtnDiv)
+	{
+		//ourFaithBtnDiv.setAttribute("class", "headerbutton");
+		ourFaithBtnDiv.style.backgroundColor="#ffffff";
+		ourFaithBtnDiv.style.color = "rgb(81,128,0)";
+	}
 } //ShowStatementOfFaith()
 
 function ShowContactUs()
 {
+	RestoreButtonColorsToDefaults();
 	HiideAllTabs();
 	var contactUsDiv = document.getElementById("ContactUsDiv");
 	if (contactUsDiv)
 		contactUsDiv.style.display="block";
+	
+	var contactUsBtnDiv = document.getElementById("ContactUsBtnDiv");
+	if (contactUsBtnDiv)
+	{
+		//contactUsBtnDiv.setAttribute("class", "headerbutton");
+		contactUsBtnDiv.style.backgroundColor="#ffffff";
+		contactUsBtnDiv.style.color = "rgb(81,128,0)";
+	}
 } //ShowContactUs()
 </script>
 
@@ -75,10 +146,10 @@ function ShowContactUs()
 	
 	<div id="ContentDiv" class="ContentClass">
 		<div id="ContentHeaderDiv" class="ContentHeaderClass">
-			<span class="headerbutton" onclick="javascript:ShowHome();">Home</span>
-			<span class="headerbutton" onclick="javascript:ShowAboutUs();">About Us</span>
-			<span class="headerbutton" onclick="javascript:ShowStatementOfFaith();">Statement of Faith</span>
-			<span class="headerbutton" onclick="javascript:ShowContactUs();">Contact Us</span>
+			<span id="HomeBtnDiv" class="headerbutton" style="left:2%; margin-right:1%;" onclick="javascript:ShowHome();">Home</span>
+			<span id="AboutUsBtnDiv" class="headerbutton"  style="left:27%;" onclick="javascript:ShowAboutUs();">About Us</span>
+			<span id="OurFaithBtnDiv" class="headerbutton"  style="right:27%;" onclick="javascript:ShowStatementOfFaith();">Our Faith</span>
+			<span id="ContactUsBtnDiv" class="headerbutton" style="right:2%; margin-left:1%;" onclick="javascript:ShowContactUs();">Contact Us</span>
 		</div>
 		<div id="HomeDiv" class="ContentContentClass" style="display:none;">
 			Welcome to the on-line home of Community Bible Chapel. We are a Christian assembly that meets every Sunday in a simple manner around the Lord's Table.

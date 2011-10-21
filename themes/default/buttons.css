@@ -1,19 +1,23 @@
 .headerbutton
 {
-	height:26px;
-	border-radius: 7px;
-	background-color: rgb(81,128,0);
-	padding-top:3px;
+	position:absolute;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: transparent; //rgb(81,128,0);
+	padding-top:2px;
 	padding-left:5px;
 	padding-right:5px;
-	border:3px solid #ffffff;
+	border-top:3px solid #ffffff;
+	border-left:3px solid #ffffff;
+	border-right:3px solid #ffffff;
 	text-align: center;
 	color:#ffffff;
 	font:20px Courier;
 	font-weight:bold;
-	margin-right:15px;
-	margin-left:15px;
-	margin-top:25%;
+	
+	margin-top:1em;
+	height:26px;
+	width:200px;
 }
 
 .headerbutton:hover
@@ -25,6 +29,7 @@
 
 .headerbutton:active 
 {
-	background-color: rgb(53,82,0);
+	background-color: rgb(43,62,0);
 	color:#ffffff;
 }
+
