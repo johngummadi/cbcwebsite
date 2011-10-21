@@ -1,0 +1,90 @@
+footer
+{
+	text-align: center;
+	padding: 1em;
+	font:12px Monaco,monospaced; color:#ffffff;
+}
+
+.ContainerClass
+{
+	background-color:#39cf79;
+	background:url(images/bk.png);
+	background-size:100% 100%;
+	-moz-background-size:100% 100%; /* Firefox 3.6 */
+	background-repeat:repeat no-repeat;
+	border:5px solid #ffffff;
+	width:98%;
+	min-width:850px;
+	height:98%;
+	margin:5px;
+}
+
+.MainHeaderClass
+{
+	background-color:#777777;
+	border-bottom:5px solid #ffffff;
+	width:100%;
+	min-width:850px;
+	height:200px;
+	padding-top:10px;
+	text-align: center;
+	font:40px Courier;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.ContentClass
+{
+	position:absolute;
+	background-color:#ffffff;
+	border-radius: 40px;
+	top:80px;
+	bottom:7%;
+	left:7%;
+	width:86%;
+	padding:5px;
+	min-width:750px;
+}
+
+.ContentHeaderClass
+{
+	position:absolute;
+	background-color:#39cf79;
+	background:url(images/bk.png);
+	background-size:1% 100%;
+	-moz-background-size:1% 100%; /* Firefox 3.6 */
+	background-repeat:repeat no-repeat;
+	border:5px solid #ffffff;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	top:5px;
+	left:5px;
+	right:5px;
+	height:50px;
+	padding-top:25px;
+	text-align: center;
+}
+
+.ContentContentClass
+{
+	position:absolute;
+	top:80px;
+	left:5px;
+	right:5px;
+	bottom:50px;
+	padding:25px;
+	autoScroll:true; overflow:auto;
+}
+.ContentFooterClass
+{
+	position:absolute;
+	background-color:#777777;
+	border:5px solid #ffffff;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	bottom:5px;
+	left:5px;
+	right:5px;
+	height:40px;
+	padding:5px;
+}

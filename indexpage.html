@@ -1,0 +1,139 @@
+<html>
+<head>
+<title> Community Bible Chapel</title>
+<link rel="stylesheet" type="text/css" href="themes/default/main.css?updated=v.0.5" />
+<link rel="stylesheet" type="text/css" href="themes/default/buttons.css?updated=v.0.5" />
+
+<script type="text/javascript"> 
+<!-- Write test javascript code here, if any-->
+window.onload = function()
+{
+	ShowHome();
+}
+
+function HiideAllTabs()
+{
+	var homeDiv = document.getElementById("HomeDiv");
+	var aboutUsDiv = document.getElementById("AboutUsDiv");
+	var statementOfFaithDiv = document.getElementById("StatementOfFaithDiv");
+	var contactUsDiv = document.getElementById("ContactUsDiv");
+	
+	
+	if (homeDiv)
+		homeDiv.style.display="none";
+	
+	if (aboutUsDiv)
+		aboutUsDiv.style.display="none";
+	
+	if (statementOfFaithDiv)
+		statementOfFaithDiv.style.display="none";
+	
+	if (contactUsDiv)
+		contactUsDiv.style.display="none";
+}
+
+function ShowHome()
+{
+	HiideAllTabs();
+	var homeDiv = document.getElementById("HomeDiv");
+	if (homeDiv)
+		homeDiv.style.display="block";
+} //ShowHome()
+
+function ShowAboutUs()
+{
+	HiideAllTabs();
+	var aboutUsDiv = document.getElementById("AboutUsDiv");
+	if (aboutUsDiv)
+		aboutUsDiv.style.display="block";
+} //ShowAboutUs()
+
+function ShowStatementOfFaith()
+{
+	HiideAllTabs();
+	var statementOfFaithDiv = document.getElementById("StatementOfFaithDiv");
+	if (statementOfFaithDiv)
+		statementOfFaithDiv.style.display="block";
+} //ShowStatementOfFaith()
+
+function ShowContactUs()
+{
+	HiideAllTabs();
+	var contactUsDiv = document.getElementById("ContactUsDiv");
+	if (contactUsDiv)
+		contactUsDiv.style.display="block";
+} //ShowContactUs()
+</script>
+
+</head>
+
+<body>
+<div id="ContainerDiv" class="ContainerClass">
+	<div id="MainHeaderDiv" class="MainHeaderClass">
+	Community Bible Chapel
+	</div>
+	
+	<div id="ContentDiv" class="ContentClass">
+		<div id="ContentHeaderDiv" class="ContentHeaderClass">
+			<span class="headerbutton" onclick="javascript:ShowHome();">Home</span>
+			<span class="headerbutton" onclick="javascript:ShowAboutUs();">About Us</span>
+			<span class="headerbutton" onclick="javascript:ShowStatementOfFaith();">Statement of Faith</span>
+			<span class="headerbutton" onclick="javascript:ShowContactUs();">Contact Us</span>
+		</div>
+		<div id="HomeDiv" class="ContentContentClass" style="display:none;">
+			Welcome to the on-line home of Community Bible Chapel. We are a Christian assembly that meets every Sunday in a simple manner around the Lord's Table.
+			We are located in Hayward, CA on the east side of the San Francisco Bay Area. San Jose and San Francisco are both roughly 25 miles away from the chapel.
+			<br><br>
+			<b><u>Sunday schedule:</u></b>
+			<br>
+			9:30am to 10:45am - Breaking of Bread to remenber the Lord Jesus Christ as He requested  
+			<br>
+			10:45am - 11:15am - coffee time
+			<br>
+			11:15am - 12:30pm - Family Bible hour
+			<br>
+			5:30pm - 6:30pm - Bible Study/missionary report, usually followed by an evening meal                                                         
+			<br>
+			Mid-week schedule*:
+			<br>
+			Monday 7:00pm - Bible Study
+			<br>
+			Thursday 7:00 pm - Young Men's Bible Study
+			<br>
+			Friday 7:00 pm - Women's Bible Study
+			<br>
+			Saturday 7:30am - Prayer Meeting
+			<br>
+			*Some of the mid-week events happen at local homes. Please contact us for further information.
+			<br>
+		</div>
+		
+		<div id="AboutUsDiv" class="ContentContentClass" style="display:none;">
+			At Community Bible Chapel, we have chosen to make the Breaking of Bread service our central meeting, with a special emphasis on worship.
+			<br><br><br>
+			1.  According to Scripture, God desires and invites our worship. We meet at His request and for His pleasure.
+			<br>
+			John 4:23-24 "But an hour is coming, and now is, when the true worshipers shall worship the Father in spirit and truth; for such people the Father seeks to be His worshipers. God is spirit, and those who worship Him must worship in spirit and truth.?
+			(NASB is used throughout).
+			<br><br>
+			2. The Breaking of Bread service is a special time for believers to honor the Lord Jesus Christ and to worship God. It appears to have been the central meeting of the early church, and so it is with us. It is called by several names in the New Testament including the breaking of bread, communion, the Lord?s table, and the Lord?s supper. As led by the Holy Spirit, it is our time to be occupied with wonder and adoration for God.
+			Acts 20:7 ?And on the first day of the week, when we were gathered together to break bread??
+			<br>
+		</div>
+		
+		<div id="StatementOfFaithDiv" class="ContentContentClass" style="display:none;">
+			Statement of Faith coming soon...
+		</div>
+		
+		<div id="ContactUsDiv" class="ContentContentClass" style="display:none;">
+			Contact Us coming soon...
+		</div>
+
+		
+		<div id="ContentFooterDiv" class="ContentFooterClass">
+			<footer> Copyright: Community Bible Chapel </footer>
+		</div>
+	</div>
+</div>
+</body>
+</html>
