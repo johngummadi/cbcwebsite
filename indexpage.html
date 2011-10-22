@@ -36,35 +36,19 @@ function RestoreButtonColorsToDefaults()
 {
 	var homeBtnDiv = document.getElementById("HomeBtnDiv");
 	if (homeBtnDiv)
-	{
-		//homeBtnDiv.setAttribute("class", "headerbutton");
-		homeBtnDiv.style.backgroundColor="transparent";
-		homeBtnDiv.style.color = "#ffffff";
-	}
+		homeBtnDiv.setAttribute("class", "tabbutton");
 	
 	var aboutUsBtnDiv = document.getElementById("AboutUsBtnDiv");
 	if (aboutUsBtnDiv)
-	{
-		//aboutUsBtnDiv.setAttribute("class", "headerbutton");
-		aboutUsBtnDiv.style.backgroundColor="transparent";
-		aboutUsBtnDiv.style.color = "#ffffff";
-	}
+		aboutUsBtnDiv.setAttribute("class", "tabbutton");
 	
 	var ourFaithBtnDiv = document.getElementById("OurFaithBtnDiv");
 	if (ourFaithBtnDiv)
-	{
-		//ourFaithBtnDiv.setAttribute("class", "headerbutton");
-		ourFaithBtnDiv.style.backgroundColor="transparent";
-		ourFaithBtnDiv.style.color = "#ffffff";
-	}
+		ourFaithBtnDiv.setAttribute("class", "tabbutton");
 	
 	var contactUsBtnDiv = document.getElementById("ContactUsBtnDiv");
 	if (contactUsBtnDiv)
-	{
-		//contactUsBtnDiv.setAttribute("class", "headerbutton");
-		contactUsBtnDiv.style.backgroundColor="transparent";
-		contactUsBtnDiv.style.color = "#ffffff";
-	}
+		contactUsBtnDiv.setAttribute("class", "tabbutton");
 } //RestoreButtonColorsToDefaults()
 
 function ShowHome()
@@ -77,11 +61,7 @@ function ShowHome()
 	
 	var homeBtnDiv = document.getElementById("HomeBtnDiv");
 	if (homeBtnDiv)
-	{
-		//homeBtnDiv.setAttribute("class", "headerbutton");
-		homeBtnDiv.style.backgroundColor="#ffffff";
-		homeBtnDiv.style.color = "rgb(81,128,0)";
-	}
+		homeBtnDiv.setAttribute("class", "tabbuttonSelected");
 } //ShowHome()
 
 function ShowAboutUs()
@@ -94,11 +74,7 @@ function ShowAboutUs()
 	
 	var aboutUsBtnDiv = document.getElementById("AboutUsBtnDiv");
 	if (aboutUsBtnDiv)
-	{
-		//aboutUsBtnDiv.setAttribute("class", "headerbutton");
-		aboutUsBtnDiv.style.backgroundColor="#ffffff";
-		aboutUsBtnDiv.style.color = "rgb(81,128,0)";
-	}
+		aboutUsBtnDiv.setAttribute("class", "tabbuttonSelected");
 } //ShowAboutUs()
 
 function ShowStatementOfFaith()
@@ -111,11 +87,7 @@ function ShowStatementOfFaith()
 	
 	var ourFaithBtnDiv = document.getElementById("OurFaithBtnDiv");
 	if (ourFaithBtnDiv)
-	{
-		//ourFaithBtnDiv.setAttribute("class", "headerbutton");
-		ourFaithBtnDiv.style.backgroundColor="#ffffff";
-		ourFaithBtnDiv.style.color = "rgb(81,128,0)";
-	}
+		ourFaithBtnDiv.setAttribute("class", "tabbuttonSelected");
 } //ShowStatementOfFaith()
 
 function ShowContactUs()
@@ -128,11 +100,7 @@ function ShowContactUs()
 	
 	var contactUsBtnDiv = document.getElementById("ContactUsBtnDiv");
 	if (contactUsBtnDiv)
-	{
-		//contactUsBtnDiv.setAttribute("class", "headerbutton");
-		contactUsBtnDiv.style.backgroundColor="#ffffff";
-		contactUsBtnDiv.style.color = "rgb(81,128,0)";
-	}
+		contactUsBtnDiv.setAttribute("class", "tabbuttonSelected");
 } //ShowContactUs()
 </script>
 
