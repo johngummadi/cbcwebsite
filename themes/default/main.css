@@ -58,6 +58,7 @@ footer
 	background-size:1% 100%;
 	-moz-background-size:1% 100%; /* Firefox 3.6 */
 	background-repeat:repeat no-repeat;
+	border-bottom:3px solid rgb(140,219,0);
 	
 	border-top-left-radius: 40px;
 	border-top-right-radius: 40px;
@@ -92,6 +93,8 @@ footer
 	-ms-animation-duration: .25s;
 	-ms-animation-timing-function: ease-in;
 	-ms-animation-iteration-count: 1;
+	
+	overflow-y:scroll;
 	
 	top:90px;
 	left:5px;
