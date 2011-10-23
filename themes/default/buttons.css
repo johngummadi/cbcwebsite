@@ -3,18 +3,21 @@
 	position:absolute;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	background-color: transparent;
 	padding-top:2px;
-	padding-left:5px;
-	padding-right:5px;
+	padding-left:1px;
+	padding-right:1px;
 	text-align: center;
 	color:rgb(81,128,0);
 	font:20px Courier;
 	font-weight:bold;
-	
-	margin-top:1em;
 	height:26px;
-	width:200px;
+	width:150px;
+	margin-right:20px;
+	margin-left:20px;
+	margin-top:1em;
 }
 
 .tabbutton:hover
@@ -37,8 +40,8 @@
 	border-top-right-radius: 5px;
 	background-color: rgb(255,255,255);
 	padding-top:2px;
-	padding-left:5px;
-	padding-right:5px;
+	padding-left:1px;
+	padding-right:1px;
 	border-top:3px solid rgb(140,219,0);
 	border-left:3px solid rgb(140,219,0);
 	border-right:3px solid rgb(140,219,0);
@@ -47,9 +50,12 @@
 	color:rgb(81,128,0);
 	font:20px Courier;
 	font-weight:bold;
+	margin-right:50px;
 	margin-top:.85em;
 	height:28px;
-	width:200px;
+	width:150px;
+	margin-right:20px;
+	margin-left:20px;
 }
 
 .tabbuttonSelected:hover

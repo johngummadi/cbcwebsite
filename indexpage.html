@@ -64,6 +64,7 @@ function ShowHome()
 		homeBtnDiv.setAttribute("class", "tabbuttonSelected");
 } //ShowHome()
 
+
 function ShowAboutUs()
 {
 	RestoreButtonColorsToDefaults();
@@ -114,63 +115,39 @@ function ShowContactUs()
 	
 	<div id="ContentDiv" class="ContentClass">
 		<div id="ContentHeaderDiv" class="ContentHeaderClass">
-			<span id="HomeBtnDiv" class="headerbutton" style="left:2%; margin-right:1%;" onclick="javascript:ShowHome();">Home</span>
-			<span id="AboutUsBtnDiv" class="headerbutton"  style="left:27%;" onclick="javascript:ShowAboutUs();">About Us</span>
-			<span id="OurFaithBtnDiv" class="headerbutton"  style="right:27%;" onclick="javascript:ShowStatementOfFaith();">Our Faith</span>
-			<span id="ContactUsBtnDiv" class="headerbutton" style="right:2%; margin-left:1%;" onclick="javascript:ShowContactUs();">Contact Us</span>
+			<span id="HomeBtnDiv" class="tabbutton" style="left:10px;" onclick="javascript:ShowHome();">Home</span>
+			<span id="AboutUsBtnDiv" class="tabbutton"  style="left:180px;" onclick="javascript:ShowAboutUs();">About Us</span>
+			<span id="OurFaithBtnDiv" class="tabbutton"  style="left:350px;" onclick="javascript:ShowStatementOfFaith();">Our Faith</span>
+			<span id="ContactUsBtnDiv" class="tabbutton" style="left:520px;" onclick="javascript:ShowContactUs();">Contact Us</span>
 		</div>
+		
 		<div id="HomeDiv" class="ContentContentClass" style="display:none;">
-			Welcome to the on-line home of Community Bible Chapel. We are a Christian assembly that meets every Sunday in a simple manner around the Lord's Table.
-			We are located in Hayward, CA on the east side of the San Francisco Bay Area. San Jose and San Francisco are both roughly 25 miles away from the chapel.
-			<br><br>
-			<b><u>Sunday schedule:</u></b>
-			<br>
-			9:30am to 10:45am - Breaking of Bread to remenber the Lord Jesus Christ as He requested  
-			<br>
-			10:45am - 11:15am - coffee time
-			<br>
-			11:15am - 12:30pm - Family Bible hour
-			<br>
-			5:30pm - 6:30pm - Bible Study/missionary report, usually followed by an evening meal                                                         
-			<br>
-			Mid-week schedule*:
-			<br>
-			Monday 7:00pm - Bible Study
-			<br>
-			Thursday 7:00 pm - Young Men's Bible Study
-			<br>
-			Friday 7:00 pm - Women's Bible Study
-			<br>
-			Saturday 7:30am - Prayer Meeting
-			<br>
-			*Some of the mid-week events happen at local homes. Please contact us for further information.
-			<br>
+			<iframe src="home.html" width="100%" height="100%" frameborder="0">
+				<p>Your browser does not support iframes.</p>
+			</iframe>
 		</div>
 		
 		<div id="AboutUsDiv" class="ContentContentClass" style="display:none;">
-			At Community Bible Chapel, we have chosen to make the Breaking of Bread service our central meeting, with a special emphasis on worship.
-			<br><br><br>
-			1.  According to Scripture, God desires and invites our worship. We meet at His request and for His pleasure.
-			<br>
-			John 4:23-24 "But an hour is coming, and now is, when the true worshipers shall worship the Father in spirit and truth; for such people the Father seeks to be His worshipers. God is spirit, and those who worship Him must worship in spirit and truth.?
-			(NASB is used throughout).
-			<br><br>
-			2. The Breaking of Bread service is a special time for believers to honor the Lord Jesus Christ and to worship God. It appears to have been the central meeting of the early church, and so it is with us. It is called by several names in the New Testament including the breaking of bread, communion, the Lord?s table, and the Lord?s supper. As led by the Holy Spirit, it is our time to be occupied with wonder and adoration for God.
-			Acts 20:7 ?And on the first day of the week, when we were gathered together to break bread??
-			<br>
+			<iframe src="aboutus.html" width="100%" height="100%" frameborder="0">
+				<p>Your browser does not support iframes.</p>
+			</iframe>
 		</div>
 		
 		<div id="StatementOfFaithDiv" class="ContentContentClass" style="display:none;">
-			Statement of Faith coming soon...
+			<iframe src="faith.html" width="100%" height="100%" frameborder="0">
+				<p>Your browser does not support iframes.</p>
+			</iframe>
 		</div>
 		
 		<div id="ContactUsDiv" class="ContentContentClass" style="display:none;">
-			Contact Us coming soon...
+			<iframe src="contactus.html" width="100%" height="100%" frameborder="0">
+				<p>Your browser does not support iframes.</p>
+			</iframe>
 		</div>
 
 		
 		<div id="ContentFooterDiv" class="ContentFooterClass">
-			<footer> Copyright: Community Bible Chapel </footer>
+			<footer>&copy; 2011 Community Bible Chapel</footer>
 		</div>
 	</div>
 </div>

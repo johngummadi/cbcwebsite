@@ -2,7 +2,7 @@ footer
 {
 	text-align: center;
 	padding: 1em;
-	font:12px Monaco,monospaced; color:#ffffff;
+	font:16px Tahoma; color:#ffffff;
 }
 
 .ContainerClass
@@ -34,7 +34,7 @@ footer
 	text-align: center;
 	font:40px Courier;
 	font-weight:bold;
-	color:#ffffff;
+	color:#f0fdf0;
 }
 
 .ContentClass
