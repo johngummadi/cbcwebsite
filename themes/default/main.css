@@ -50,20 +50,6 @@
 	cursor:default;	
 }
 
-footer
-{
-	text-align: center;
-	padding-top: 7px;
-	font:16px Tahoma; color:#ffffff;
-	cursor:default;	
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-	cursor:default;	
-}
-
 .ContentClass
 {
 	position:absolute;
@@ -140,6 +126,19 @@ footer
 	bottom:5px;
 	left:5px;
 	right:5px;
-	height:30px;
-	padding-bottom:5px;
+	height:40px;
+}
+
+footer
+{
+	text-align: center;
+	padding-top: 9px;
+	font:16px Tahoma; color:#ffffff;
+	cursor:default;	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:default;	
 }
