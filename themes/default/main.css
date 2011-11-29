@@ -53,7 +53,7 @@
 footer
 {
 	text-align: center;
-	padding: 1em;
+	padding-top: 7px;
 	font:16px Tahoma; color:#ffffff;
 	cursor:default;	
 	-webkit-user-select: none;
@@ -133,13 +133,13 @@ footer
 {
 	color: #ffffff;
 	position:absolute;
-	background-color:#777777;
+	background-color:#444444;
 	border:5px solid #ffffff;
 	border-bottom-left-radius: 40px;
 	border-bottom-right-radius: 40px;
 	bottom:5px;
 	left:5px;
 	right:5px;
-	height:40px;
-	padding:5px;
+	height:30px;
+	padding-bottom:5px;
 }
