@@ -3,13 +3,34 @@
 <title> Community Bible Chapel</title>
 <link rel="stylesheet" type="text/css" href="themes/default/main.css?updated=v.0.5" />
 <link rel="stylesheet" type="text/css" href="themes/default/buttons.css?updated=v.0.5" />
+<script type="text/javascript" src="js/browserdetect.js"></script>
 
 <script type="text/javascript"> 
 <!-- Write test javascript code here, if any-->
 window.onload = function()
 {
+	doBrowserAdjustments();
 	ShowHome();
 }
+
+function doBrowserAdjustments()
+{
+	var bIsFireFox = isFirefox();
+	var bIsIE = isIE();
+	
+	if (bIsIE)
+	{
+		document.body.setAttribute("class", "bodyclass");
+	}
+	else if (bIsFireFox)
+	{
+		document.body.setAttribute("class", "bodyclass_firefox");
+	}
+	else //rest
+	{
+		document.body.setAttribute("class", "bodyclass");
+	}
+} //doBrowserAdjustments()
 
 function HiideAllTabs()
 {
@@ -107,8 +128,8 @@ function ShowContactUs()
 
 </head>
 
-<body>
-<div id="ContainerDiv" class="ContainerClass">
+<body class="bodyclass">
+<!--<div id="ContainerDiv" class="ContainerClass"> -->
 	<div id="MainHeaderDiv" class="MainHeaderClass">
 	Community Bible Chapel
 	</div>
@@ -150,6 +171,6 @@ function ShowContactUs()
 			<footer>&copy; 2011 Community Bible Chapel</footer>
 		</div>
 	</div>
-</div>
+<!-- </div> -->
 </body>
 </html>

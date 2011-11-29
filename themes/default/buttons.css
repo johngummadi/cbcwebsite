@@ -18,6 +18,11 @@
 	margin-right:20px;
 	margin-left:20px;
 	margin-top:1em;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 .tabbutton:hover
@@ -56,15 +61,18 @@
 	width:150px;
 	margin-right:20px;
 	margin-left:20px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 .tabbuttonSelected:hover
 {
-	cursor:pointer;
-	color:rgb(140,219,0);
+	cursor:default;	
 }
 
 .tabbuttonSelected:active 
 {
-	color:rgb(140,219,0);
 }

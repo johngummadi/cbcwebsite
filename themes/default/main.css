@@ -1,7 +1,24 @@
+.bodyclass
+{
+	background-image:url(images/mainbk.jpg);
+	background-size:100% 100%;
+	-moz-background-size:100% 100%; /* Firefox 3.6 */
+	background-repeat:no-repeat no-repeat;
+}
+
+.bodyclass_firefox
+{
+	background-image:url(images/mainbk.jpg);
+	background-size:100%;
+	background-repeat:repeat no-repeat;
+	-moz-background-size:100%; /* Firefox 3.6 */
+}
+
 .ContainerClass
 {
+	opacity:0.4;
+	filter:alpha(opacity=40);
 	background-color:#39cf79;
-	background:url(images/bk.png);
 	background-size:100% 100%;
 	-moz-background-size:100% 100%; /* Firefox 3.6 */
 	background-repeat:repeat no-repeat;
@@ -14,11 +31,7 @@
 
 .MainHeaderClass
 {
-	background-color:#88a077;
-	background:url(images/header-bk.png);
-	background-size:1% 100%;
-	-moz-background-size:1% 100%; /* Firefox 3.6 */
-	background-repeat:repeat no-repeat;
+	background-color:transperant;
 	border-bottom:5px solid #ffffff;
 	width:100%;
 	min-width:850px;
@@ -28,7 +41,13 @@
 	font:40px Courier;
 	font-weight:bold;
 	color:#ffffff;
-	text-shadow: 3px 3px rgb(81,128,0);
+	text-shadow: 5px 5px rgb(81,128,0);
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:default;	
 }
 
 footer
@@ -36,6 +55,13 @@ footer
 	text-align: center;
 	padding: 1em;
 	font:16px Tahoma; color:#ffffff;
+	cursor:default;	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:default;	
 }
 
 .ContentClass
@@ -45,15 +71,14 @@ footer
 	border-radius: 40px;
 	top:80px;
 	bottom:7%;
-	left:7%;
-	width:86%;
+	left:10%;
+	width:80%;
 	padding:5px;
 	min-width:750px;
 }
 
 .ContentHeaderClass
 {
-	
 	background-color:#39cf79;
 	background:url(images/bk.png);
 	background-size:1% 100%;
@@ -106,6 +131,7 @@ footer
 }
 .ContentFooterClass
 {
+	color: #ffffff;
 	position:absolute;
 	background-color:#777777;
 	border:5px solid #ffffff;
