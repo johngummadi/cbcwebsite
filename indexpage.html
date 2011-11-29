@@ -38,6 +38,7 @@ function HiideAllTabs()
 	var aboutUsDiv = document.getElementById("AboutUsDiv");
 	var statementOfFaithDiv = document.getElementById("StatementOfFaithDiv");
 	var contactUsDiv = document.getElementById("ContactUsDiv");
+	var bibleDiv = document.getElementById("BibleDiv");
 	
 	
 	if (homeDiv)
@@ -51,6 +52,9 @@ function HiideAllTabs()
 	
 	if (contactUsDiv)
 		contactUsDiv.style.display="none";
+	
+	if (bibleDiv)
+		bibleDiv.style.display="none";
 }
 
 function RestoreButtonColorsToDefaults()
@@ -70,6 +74,10 @@ function RestoreButtonColorsToDefaults()
 	var contactUsBtnDiv = document.getElementById("ContactUsBtnDiv");
 	if (contactUsBtnDiv)
 		contactUsBtnDiv.setAttribute("class", "tabbutton");
+		
+	var bibleBtnDiv = document.getElementById("BibleBtnDiv");
+	if (bibleBtnDiv)
+		bibleBtnDiv.setAttribute("class", "tabbutton");
 } //RestoreButtonColorsToDefaults()
 
 function ShowHome()
@@ -124,6 +132,19 @@ function ShowContactUs()
 	if (contactUsBtnDiv)
 		contactUsBtnDiv.setAttribute("class", "tabbuttonSelected");
 } //ShowContactUs()
+
+function ShowBible()
+{
+	RestoreButtonColorsToDefaults();
+	HiideAllTabs();
+	var bibleDiv = document.getElementById("BibleDiv");
+	if (bibleDiv)
+		bibleDiv.style.display="block";
+	
+	var bibleUsBtnDiv = document.getElementById("BibleBtnDiv");
+	if (bibleUsBtnDiv)
+		bibleUsBtnDiv.setAttribute("class", "tabbuttonSelected");
+} //ShowBible()
 </script>
 
 </head>
@@ -140,6 +161,7 @@ function ShowContactUs()
 			<span id="AboutUsBtnDiv" class="tabbutton"  style="left:180px;" onclick="javascript:ShowAboutUs();">About Us</span>
 			<span id="OurFaithBtnDiv" class="tabbutton"  style="left:350px;" onclick="javascript:ShowStatementOfFaith();">Our Faith</span>
 			<span id="ContactUsBtnDiv" class="tabbutton" style="left:520px;" onclick="javascript:ShowContactUs();">Contact Us</span>
+			<!--<span id="BibleBtnDiv" class="tabbutton" style="left:690px;" onclick="javascript:ShowBible();">Bible</span>-->
 		</div>
 		
 		<div id="HomeDiv" class="ContentContentClass" style="display:none;">
@@ -165,7 +187,13 @@ function ShowContactUs()
 				<p>Your browser does not support iframes.</p>
 			</iframe>
 		</div>
-
+		<!--
+		<div id="BibleDiv" class="ContentContentClass" style="display:none;">
+			<iframe src="http://www.cloudstudybible.com" width="100%" height="100%" frameborder="0">
+				<p>Your browser does not support iframes.</p>
+			</iframe>
+		</div>
+		-->
 		
 		<div id="ContentFooterDiv" class="ContentFooterClass">
 			<footer>&copy; 2011 Community Bible Chapel</footer>
